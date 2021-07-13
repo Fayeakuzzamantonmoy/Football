@@ -51,6 +51,11 @@ img
 {
     grid-template-columns: repeat(3,1fr);
 }
+.grid-three-gap
+{
+    grid-gap: 24px;
+    grid-row-gap: 28px;
+}
 .btn
 {
     padding: 18px 25px;
@@ -59,15 +64,24 @@ img
     line-height: 24px;
     color: #fff;
     background-color: #E02C6D;
+    transition: transform .3s;
+    display:inline-block ;
 }
-.btn i
+.btn:hover
 {
-    color: #fff;
-    margin-left: 10px;
+    transform: scale(1.25); 
 } 
 .half-width
 {
     width: 50%;
+}
+.p-t-b
+{
+    padding: 70px 0;
+}
+.fa-arrow-right
+{
+    padding-left: 30px;
 }
 /* ----------------------------------
 Hero section css  
@@ -88,4 +102,95 @@ Hero section css
     color: #fff;
     width: 90%;
     margin-bottom: 30px;
+}
+/* ----------------------------------
+Player section css  
+------------------------------------*/
+.player_card
+{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+}
+.player_card img
+{
+    margin-bottom: 15px;
+}
+.player_card h2
+{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #18191F;
+    margin-bottom: 15px;
+}
+.player_card p
+{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #6C6C6C;
+}
+/* ----------------------------------
+Highlight section css  
+------------------------------------*/
+.highlight_wrapper
+{
+    gap: 60px;
+}
+.highlight h1
+{
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 700;
+    color: #0a0826;
+    margin-bottom: 25px;
+}
+.highlight p
+{
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #6C6C6C;
+    margin-bottom: 30px;
+}
+/* ----------------------------------
+Footer portion css  
+------------------------------------*/
+.footer_wrapper
+{
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+}
+.social-icon 
+{
+    margin-bottom: 35px;
+}
+.social-icon .custom-icon
+{
+    color: #969BAB;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #c4c4c461;
+    padding: 10px;
+    transition: transform 0.75s ease-in-out;
+    
+}
+.social-icon a:hover .custom-icon
+{
+    color: green;
+    transform: rotate(360deg);
+}
+.social-icon a:not(:last-child)
+{
+    margin-right: 30px;
+}
+.footer_wrapper p 
+{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000;
 }
