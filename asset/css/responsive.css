@@ -1,9 +1,44 @@
+@media only screen and (max-width:1007px)
+{
+    
+    .p-t-b
+    {
+        padding: 40px 0;
+    }
+    .hero_wrapper,
+    .highlight_wrapper
+    {
+        height: auto;
+        padding: 40px 15px;
+    }
+    .hero_left h1
+    {
+        font-size: 45px;
+        line-height: 64px;
+        font-weight: 700;
+        width: 95%;
+    }
+    .player_wrapper
+    {
+        grid-template-columns: repeat(2,1fr);
+        padding:0 15px;
+    }
+    
+    .footer_wrapper
+    {
+        width: 80%;
+    }
+    footer img
+    {
+        width: 220px;
+        margin-bottom: 40px;
+    }
+}
 /* ----------------------------------
 Responsive for Smaall Devices  
 ------------------------------------*/
 @media only screen and (max-width:640px)
-{
-    
+{  
     .p-t-b
     {
         padding: 45px 0;
@@ -14,21 +49,20 @@ Responsive for Smaall Devices
         flex-direction: column;
         padding: 60px 15px;
     }
-
-    .half-width
-    {
-        width: 100%;
-    }
     .hero_left
     {
         margin-bottom: 60px;
+    }
+    .half-width
+    {
+        width: 100%;
     } 
     .hero_left h1
     {
         font-size: 36px;
         line-height: 50px;
         font-weight: 700;
-        width: 55%;
+        width: 50%;
     }
     .hero_right img
     {
@@ -41,18 +75,21 @@ Responsive for Smaall Devices
         grid-template-columns: repeat(1,1fr);
         padding:0 15px;
     }
-    .player_card img
-    {
-        width: 300px;
-    }
     .highlight_wrapper
     {
         flex-direction: column;
         padding:0 15px;
     }
+    .highlight h1
+    {
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 700;
+        color: #0a0826;
+        margin-bottom: 25px;
+    }
     .highlight_right img
     {
-        width: 328px;
         display: block;
         margin: 0 auto;
     }
@@ -60,15 +97,17 @@ Responsive for Smaall Devices
     {
         width: 100%;
     }
-    footer .social-icon
-    {
-        display: inherit;
-        margin-bottom: 30px;
-    }
     footer img
     {
         width: 246px;
         margin-bottom: 40px;
     }
-
+    footer .social-icon
+    {
+        display: inherit;
+        margin-bottom: 30px;
+    }
 }
+/* ----------------------------------
+Responsive for Medium Devices  
+------------------------------------*/
