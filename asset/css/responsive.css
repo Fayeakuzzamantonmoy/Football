@@ -26,7 +26,20 @@ Responsive for Medium Devices
         grid-template-columns: repeat(2,1fr);
         padding:0 15px;
     }
-    
+    #subscribe-button
+    {
+        width: 98%;
+        margin: 5px;
+    }
+    #email-input
+    {
+        width: 98%;
+        margin: 5px;
+    }
+    #subscribebox
+    {
+        width: 100%;
+    }
     .footer_wrapper
     {
         width: 80%;
